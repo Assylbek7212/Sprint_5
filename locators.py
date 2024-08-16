@@ -7,6 +7,11 @@ class RegistrationPageLocators:
     SUBMIT_BUTTON = (By.XPATH, '//button[text()="Зарегистрироваться"]')
     ERROR_MESSAGE = (By.XPATH, '//p[contains(text(), "Некорректный пароль")]')
 
+class URLS:
+    STELLAR_BURGERS_HOME = "https://stellarburgers.nomoreparties.site/"
+    STELLAR_BURGERS_REGISTER = f"{STELLAR_BURGERS_HOME}register"
+    STELLAR_BURGERS_FORGOT_PASSWORD = f"{STELLAR_BURGERS_HOME}forgot-password"
+
 class SignInMain:
     element_value = (By.XPATH, '//input[@value="gold_kas@mail.ru"]')
     ORDER_BUTTON = (By.XPATH,  '//button[contains(@class, "button_button__33qZ0") '
